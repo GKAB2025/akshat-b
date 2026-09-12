@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Akshat Bora — Projects</title>
+<meta name="description" content="Akshat Bora — electrical engineering student at the University of Michigan working in silicon photonics and digital design.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <h1>Akshat Bora</h1>
+  <p class="standfirst">
+    Electrical engineering (BSE) at the University of Michigan, class of 2028.
+    I work on silicon photonics — optical packaging, waveguide and resonator
+    simulation — and on digital design, from Verilog RTL through layout and tapeout.
+  </p>
+  <nav>
+    <a href="#silitronics">Silitronics</a>
+    <a href="#ayar">Ayar Labs</a>
+    <a href="#brailliance">Brailliance</a>
+    <a href="#cosmos">COSMOS</a>
+    <a href="#lumerical">Lumerical</a>
+    <a href="#first-build">First build</a>
+    <a href="#skills">Skills</a>
+  </nav>
+</header>
+
+<main>
+
+<section id="silitronics">
+  <h2>Silitronics</h2>
+  <p class="meta">Silicon photonics packaging · presented at the IMAPS Device Packaging Conference, March 2025</p>
+  <p>
+    Work on advanced photonic packaging at Silitronics, presented as a poster at the
+    IMAPS Device Packaging Conference in 2025.
+  </p>
+  <ul class="links">
+    <li><a href="https://docs.google.com/presentation/d/1Yg5OaU0lo_CMWeG-pFIN6DKNoNADtH4h/edit?usp=sharing&amp;ouid=110296341787920315158&amp;rtpof=true&amp;sd=true">Conference poster (March 2025)</a></li>
+  </ul>
+</section>
+
+<section id="ayar">
+  <h2>Ayar Labs</h2>
+  <p class="meta">Optical packaging &amp; validation intern · May–August 2026</p>
+  <p>
+    I spent the summer at Ayar Labs, an optical I/O company, working on optical
+    packaging and validation: automated inspection workflows, hardware–software
+    integration, sub-micron optical alignment, and thermal validation.
+  </p>
+  <p>
+    Most of what I touched is internal, so there are no photos, measurement results,
+    or tool screenshots here. What I can say is that I worked on a fiber array unit
+    characterization station whose results feed directly into Ayar Labs' internal chip
+    iterations ahead of the public v1.0 release in a couple of years — and that I
+    learned an enormous amount about how a photonics product actually gets built,
+    measured, and trusted.
+  </p>
+</section>
+
+<section id="brailliance">
+  <h2>Brailliance</h2>
+  <p class="meta">MIT Beaver Works Summer Institute</p>
+  <p>
+    Brailliance is a custom chip project built at MIT Beaver Works: Verilog RTL taken
+    through Magic VLSI layout and taped out on the SkyWater 130&nbsp;nm process. It is the
+    project where I learned the full digital flow end to end rather than one stage of it.
+  </p>
+  <ul class="links">
+    <li><a href="https://www.brailliance.org/">brailliance.org</a></li>
+    <li><a href="https://docs.google.com/presentation/d/1uBL64VBNvHkjIxFDn34ppWjqpaKEQb1kB8uBDaxKCY8/edit?usp=sharing">Project presentation</a></li>
+  </ul>
+</section>
+
+<section id="cosmos">
+  <h2>COSMOS</h2>
+  <p class="meta">Fiber optic communication</p>
+  <p>
+    A summer research project on fiber optic communication — how light carries data over
+    fiber, and what limits how much of it you can send. This was my first real exposure to
+    photonics, and the reason the rest of the work on this page looks the way it does.
+  </p>
+  <ul class="links">
+    <li><a href="https://docs.google.com/presentation/d/10qnut7xnb3oYAdhEVoRHRYYdUR2HhELNzFrLnfCWKgw/edit?usp=sharing">Fiber optic communication (presentation)</a></li>
+  </ul>
+</section>
+
+<section id="lumerical">
+  <h2>Lumerical</h2>
+  <p class="meta">Ansys Lumerical · waveguide and resonator simulation</p>
+
+  <h3>Waveguides</h3>
+  <p>
+    A photonic waveguide guides light by surrounding a high-index core with lower-index
+    cladding — in silicon photonics, a silicon core (n&nbsp;≈&nbsp;3.48) sitting on buried
+    oxide (n&nbsp;≈&nbsp;1.44). Total internal reflection traps the light in the core, but
+    the cross-section decides how it travels. Above a certain width the guide supports
+    higher-order modes, which interfere with the fundamental mode and corrupt whatever
+    signal you are carrying. Below it, only the fundamental mode survives — that is the
+    single-mode regime almost every silicon photonic link is designed to stay in. Push the
+    width too far down and the mode spreads out of the core into the cladding, where it is
+    lost to scattering and substrate leakage. Single-mode design is choosing the window
+    between those two failures.
+  </p>
+
+  <h4>Single-mode cutoff</h4>
+  <ul>
+    <li>Sweeping waveguide width to find where higher-order modes cut off</li>
+    <li>Comparing multimode and single-mode behavior in the same geometry</li>
+    <li>Simulating the higher-order modes directly rather than inferring them</li>
+  </ul>
+
+  <h4>Bend loss</h4>
+  <ul>
+    <li>Sweeping width and bend radius to map where a bend starts radiating</li>
+  </ul>
+  <p>
+    A bent waveguide loses light because the outer edge of the mode would have to outrun
+    the speed of light in the cladding to keep up with the inner edge; instead it radiates
+    away. Loss climbs sharply below a critical radius, and wider guides tolerate tighter
+    bends — but only up to the point where they stop being single-mode. Bend radius is
+    therefore not a layout detail; it is the constraint that sets how small a photonic
+    circuit can be.
+  </p>
+
+  <h3>Ring resonators</h3>
+  <p>
+    A ring resonator is a closed loop of waveguide placed close enough to a straight bus
+    waveguide for light to couple across the gap. Wavelengths whose round trip comes back
+    in phase build up inside the ring and disappear from the through port; everything else
+    passes by untouched. That makes a ring a wavelength-selective filter you can build out
+    of nothing but a bend. Its free spectral range is set by the round-trip length, its Q
+    by how little light is lost per lap, and its resonance shifts with temperature or an
+    applied voltage — which is what turns the same structure into a modulator, a
+    multiplexer, or a sensor depending on what you attach to it.
+  </p>
+
+  <h3>Where this is going</h3>
+  <p>
+    The cutoff and bend-loss sweeps above are not separate exercises — they are the two
+    numbers a ring design starts from. The ring has to stay single-mode, and its radius
+    sets both its free spectral range and how much light it loses every lap, so the useful
+    design space is the overlap of those two studies. Having worked on the packaging and
+    validation side of optical I/O at Ayar Labs and Silitronics, I want to move upstream
+    into the device itself: integrated photonics research on ring resonators, building
+    toward resonant filters and modulators for optical links.
+  </p>
+</section>
+
+<section id="first-build">
+  <h2>First build</h2>
+  <p class="meta">7th grade</p>
+  <p>
+    The first thing I ever designed and pitched. It is here because it is where the
+    habit started.
+  </p>
+  <ul class="links">
+    <li><a href="https://docs.google.com/presentation/d/1TAHW0f40430UeQ_MBsoi4NgGOtaFd2iQ/edit?slide=id.g8a79dbcd03_2_0#slide=id.g8a79dbcd03_2_0">Pitch deck</a></li>
+  </ul>
+</section>
+
+<section id="skills">
+  <h2>Skills</h2>
+  <dl class="skills">
+    <dt>Digital design</dt>
+    <dd>Verilog, RTL design, Magic VLSI, SkyWater 130&nbsp;nm, Cadence Virtuoso</dd>
+    <dt>Photonics</dt>
+    <dd>Ansys Lumerical, optical alignment, fiber array unit characterization, thermal validation</dd>
+    <dt>Software</dt>
+    <dd>Python, C#</dd>
+  </dl>
+</section>
+
+</main>
+
+<footer>
+  <p>Akshat Bora · Ann Arbor, Michigan</p>
+  <p class="contact">
+    <a href="mailto:YOUR-EMAIL@umich.edu">Email</a>
+    <a href="https://www.linkedin.com/in/YOUR-HANDLE">LinkedIn</a>
+    <a href="https://github.com/YOUR-HANDLE">GitHub</a>
+  </p>
+</footer>
+
+</body>
+</html>

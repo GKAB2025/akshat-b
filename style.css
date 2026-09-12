@@ -1,0 +1,139 @@
+/* Akshat Bora — personal site
+   One column, one typeface, one accent. Everything else stays out of the way. */
+
+:root {
+  --ink:      #1b1b1a;
+  --muted:    #63676b;
+  --rule:     #e0dedb;
+  --paper:    #fdfdfc;
+  --accent:   #145374;   /* the one colour on the page: links only */
+  --measure:  34rem;     /* ~68 characters at this size */
+}
+
+*, *::before, *::after { box-sizing: border-box; }
+
+html { -webkit-text-size-adjust: 100%; }
+
+body {
+  margin: 0;
+  padding: 4rem 1.5rem 6rem;
+  background: var(--paper);
+  color: var(--ink);
+  font-family: Charter, "Bitstream Charter", "Sitka Text", Cambria, Georgia, serif;
+  font-size: 1.0625rem;
+  line-height: 1.65;
+}
+
+header, main, footer {
+  max-width: var(--measure);
+  margin-inline: auto;
+}
+
+/* ---- header ---- */
+
+h1 {
+  margin: 0 0 .75rem;
+  font-size: 2rem;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+}
+
+.standfirst {
+  margin: 0 0 1.75rem;
+  color: var(--muted);
+}
+
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .4rem 1.1rem;
+  padding-bottom: 2.5rem;
+  border-bottom: 1px solid var(--rule);
+  font-size: .9375rem;
+}
+
+/* ---- sections ---- */
+
+section {
+  padding-top: 2.75rem;
+}
+
+h2 {
+  margin: 0 0 .25rem;
+  font-size: 1.375rem;
+  font-weight: 600;
+}
+
+h3 {
+  margin: 2rem 0 .5rem;
+  font-size: 1.0625rem;
+  font-weight: 600;
+}
+
+h4 {
+  margin: 1.5rem 0 .35rem;
+  font-size: 1rem;
+  font-weight: 400;
+  font-style: italic;
+  color: var(--muted);
+}
+
+.meta {
+  margin: 0 0 1rem;
+  color: var(--muted);
+  font-size: .9375rem;
+}
+
+p { margin: 0 0 1rem; }
+
+ul { margin: 0 0 1rem; padding-left: 1.1rem; }
+li { margin-bottom: .2rem; }
+
+ul.links {
+  list-style: none;
+  padding-left: 0;
+  border-left: 2px solid var(--rule);
+  padding-left: .9rem;
+}
+
+/* ---- skills ---- */
+
+.skills { margin: 0; }
+.skills dt {
+  font-style: italic;
+  color: var(--muted);
+  margin-top: 1rem;
+}
+.skills dd { margin: .1rem 0 0; }
+
+/* ---- links ---- */
+
+a {
+  color: var(--accent);
+  text-decoration-thickness: 1px;
+  text-underline-offset: 2px;
+}
+a:hover { text-decoration: none; }
+a:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 3px;
+}
+
+/* ---- footer ---- */
+
+footer {
+  margin-top: 4rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--rule);
+  color: var(--muted);
+  font-size: .9375rem;
+}
+footer p { margin: 0 0 .35rem; }
+.contact a { margin-right: 1rem; }
+
+/* ---- small screens ---- */
+
+@media (max-width: 30rem) {
+  body { padding: 2.5rem 1.25rem 4rem; }
+  h1 { font-size: 1.75rem; }
+}
