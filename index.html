@@ -1,187 +1,284 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Akshat Bora — Projects</title>
-<meta name="description" content="Akshat Bora — electrical engineering student at the University of Michigan working in silicon photonics and digital design.">
-<link rel="stylesheet" href="style.css">
+<script src="./support.js"></script>
 </head>
 <body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400;8..60,600;8..60,700&family=Work+Sans:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap">
+<style>
+body{margin:0;background:#150f0c;color:#f2e7d6;font-family:"Work Sans",-apple-system,Segoe UI,sans-serif;font-size:17px;line-height:1.65;-webkit-font-smoothing:antialiased}
+p{margin:0 0 1rem}
+p:last-child{margin-bottom:0}
+a{color:var(--accent,#e2905c);text-decoration-thickness:1px;text-underline-offset:2px}
+a:hover{text-decoration:none;color:#f0b184}
+</style>
+</helmet>
 
-<header>
-  <h1>Akshat Bora</h1>
-  <p class="standfirst">
-    Electrical engineering (BSE) at the University of Michigan, class of 2028.
-    I work on silicon photonics — optical packaging, waveguide and resonator
-    simulation — and on digital design, from Verilog RTL through layout and tapeout.
-  </p>
-  <nav>
-    <a href="#silitronics">Silitronics</a>
-    <a href="#ayar">Ayar Labs</a>
-    <a href="#brailliance">Brailliance</a>
-    <a href="#cosmos">COSMOS</a>
-    <a href="#lumerical">Lumerical</a>
-    <a href="#first-build">First build</a>
-    <a href="#skills">Skills</a>
+<div style="--accent:{{ accent }};min-height:100%;background:#150f0c">
+
+<header style="display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:14px 28px;padding:18px 28px;background:#1a120e;border-bottom:1px solid #3a2c22;position:sticky;top:0;z-index:10">
+  <div style="display:flex;align-items:center;gap:14px">
+    <div style="position:relative;width:34px;height:26px;flex:none">
+      <div style="position:absolute;left:0;top:0;width:14px;height:6px;background:var(--accent,#e2905c)"></div>
+      <div style="position:absolute;left:0;top:5px;width:34px;height:21px;background:#2a1d16;border:1px solid var(--accent,#e2905c)"></div>
+    </div>
+    <span style="font-family:'Source Serif 4',Georgia,serif;font-size:23px;font-weight:600;letter-spacing:-.01em">Akshat Bora</span>
+  </div>
+  <nav style="display:flex;flex-wrap:wrap;align-items:center;gap:4px 6px;font-size:15px">
+    <a href="#inverse-design" style="padding:7px 12px;color:var(--accent,#e2905c);background:#2a1d16;text-decoration:none" style-hover="background:#33241b">Inverse design</a>
+    <a href="#silitronics" style="padding:7px 12px;color:#f2e7d6;text-decoration:none" style-hover="color:var(--accent,#e2905c)">Silitronics</a>
+    <a href="#ayar" style="padding:7px 12px;color:#f2e7d6;text-decoration:none" style-hover="color:var(--accent,#e2905c)">Ayar Labs</a>
+    <a href="#brailliance" style="padding:7px 12px;color:#f2e7d6;text-decoration:none" style-hover="color:var(--accent,#e2905c)">Brailliance</a>
+    <a href="#lumerical" style="padding:7px 12px;color:#f2e7d6;text-decoration:none" style-hover="color:var(--accent,#e2905c)">Lumerical</a>
+    <a href="#skills" style="padding:7px 12px;color:#f2e7d6;text-decoration:none" style-hover="color:var(--accent,#e2905c)">Skills</a>
   </nav>
+  <a href="mailto:YOUR-EMAIL@umich.edu" style="padding:11px 20px;background:var(--accent,#e2905c);color:#1a120e;font-weight:600;font-size:15px;text-decoration:none" style-hover="background:#f0b184">Get in touch</a>
 </header>
 
-<main>
+<section style="padding:56px 28px 72px;background:radial-gradient(120% 150% at 12% 0%,#8a5636,#5b3a26 55%,#150f0c 100%)">
+  <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,380px),1fr));gap:32px;align-items:start;max-width:1500px;margin:0 auto">
 
-<section id="silitronics">
-  <h2>Silitronics</h2>
-  <p class="meta">Silicon photonics packaging · presented at the IMAPS Device Packaging Conference, March 2025</p>
-  <p>
-    Work on advanced photonic packaging at Silitronics, presented as a poster at the
-    IMAPS Device Packaging Conference in 2025.
-  </p>
-  <ul class="links">
-    <li><a href="https://docs.google.com/presentation/d/1Yg5OaU0lo_CMWeG-pFIN6DKNoNADtH4h/edit?usp=sharing&amp;ouid=110296341787920315158&amp;rtpof=true&amp;sd=true">Conference poster (March 2025)</a></li>
-  </ul>
+    <div style="min-width:0">
+      <div style="display:flex;align-items:center;gap:7px;padding:11px 14px;background:#241a14;border:1px solid #3a2c22">
+        <span style="width:11px;height:11px;border-radius:50%;background:#e5675f"></span>
+        <span style="width:11px;height:11px;border-radius:50%;background:#e8b95c"></span>
+        <span style="width:11px;height:11px;border-radius:50%;background:#6fbf73"></span>
+        <span style="margin-left:8px;font-family:'JetBrains Mono',Menlo,monospace;font-size:13px;color:#b9a891">Welcome — akshat_bora.exe</span>
+      </div>
+      <div style="padding:34px 34px 38px;background:#1e1611;border:1px solid #3a2c22;border-top:none">
+        <span style="display:inline-block;padding:7px 12px;border:1px solid #4a3527;font-family:'JetBrains Mono',Menlo,monospace;font-size:14px;letter-spacing:.04em;color:var(--accent,#e2905c)">SILICON_PHOTONICS.EXE</span>
+        <h1 style="margin:22px 0 26px;font-family:'Source Serif 4',Charter,Georgia,serif;font-weight:600;font-size:clamp(2.4rem,4.4vw,3.9rem);line-height:1.05;letter-spacing:-.015em;text-wrap:pretty">About me</h1>
+        <p style="max-width:38rem;color:#ead9c4">I'm an electrical engineering student at the University of Michigan, class of 2028. My work is in silicon photonics: optical packaging, and waveguide and resonator simulation in Lumerical. I also do digital design, and have taken a chip from Verilog RTL through layout to tapeout on SkyWater 130 nm.</p>
+        <div style="display:flex;flex-wrap:wrap;gap:12px;margin-top:30px">
+          <a href="#inverse-design" style="padding:13px 22px;background:var(--accent,#e2905c);color:#1a120e;font-weight:600;font-size:16px;text-decoration:none" style-hover="background:#f0b184">Read the work</a>
+          <a href="#skills" style="padding:13px 22px;border:1px solid #4a3527;color:#f2e7d6;font-weight:500;font-size:16px;text-decoration:none" style-hover="border-color:var(--accent,#e2905c)">Skills index</a>
+        </div>
+      </div>
+    </div>
+
+    <div style="min-width:0;display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,300px),1fr));gap:32px;align-items:start">
+      <div>
+        <div style="display:flex;align-items:center;gap:7px;padding:11px 14px;background:#241a14;border:1px solid #3a2c22">
+          <span style="width:11px;height:11px;border-radius:50%;background:#e5675f"></span>
+          <span style="width:11px;height:11px;border-radius:50%;background:#e8b95c"></span>
+          <span style="width:11px;height:11px;border-radius:50%;background:#6fbf73"></span>
+          <span style="margin-left:8px;font-family:'JetBrains Mono',Menlo,monospace;font-size:13px;color:#b9a891">CURRENT_STATUS</span>
+        </div>
+        <div style="padding:26px;background:#1e1611;border:1px solid #3a2c22;border-top:none;display:flex;flex-direction:column;gap:18px">
+          <div>
+            <div style="font-size:15px;color:#b9a891;margin-bottom:7px">Studying</div>
+            <div style="padding:13px 15px;border:1px solid #3a2c22;background:#241a14;font-size:16px">EE (BSE), Michigan '28</div>
+          </div>
+          <div>
+            <div style="font-size:15px;color:#b9a891;margin-bottom:7px">Most recently</div>
+            <div style="padding:13px 15px;border:1px solid #3a2c22;background:#241a14;font-size:16px">Ayar Labs — optical I/O</div>
+          </div>
+          <div style="padding:14px 15px;background:#120c09;border:1px solid #3a2c22;font-family:'JetBrains Mono',Menlo,monospace;font-size:14px;color:#d8c4a8">&gt; 1 tapeout &#8212;&gt; SkyWater 130 nm</div>
+          <a href="#lumerical" style="padding:14px 16px;background:var(--accent,#e2905c);color:#1a120e;font-weight:600;font-size:16px;text-decoration:none" style-hover="background:#f0b184">Open Lumerical log</a>
+        </div>
+      </div>
+
+      <div>
+        <div style="display:flex;align-items:center;gap:7px;padding:11px 14px;background:#241a14;border:1px solid #3a2c22">
+          <span style="width:11px;height:11px;border-radius:50%;background:#e5675f"></span>
+          <span style="width:11px;height:11px;border-radius:50%;background:#e8b95c"></span>
+          <span style="width:11px;height:11px;border-radius:50%;background:#6fbf73"></span>
+          <span style="margin-left:8px;font-family:'JetBrains Mono',Menlo,monospace;font-size:13px;color:#b9a891">photo.png</span>
+        </div>
+        <div style="padding:14px;background:#1e1611;border:1px solid #3a2c22;border-top:none">
+          <img src="photo.png" alt="Akshat Bora at a Michigan football game" style="display:block;width:100%;height:340px;object-fit:cover;object-position:center 20%;filter:{{ photoFilter }}">
+          <div style="margin-top:12px;font-family:'JetBrains Mono',Menlo,monospace;font-size:13px;color:#b9a891">Ann Arbor, Michigan</div>
+        </div>
+      </div>
+    </div>
+
+  </div>
 </section>
 
-<section id="ayar">
-  <h2>Ayar Labs</h2>
-  <p class="meta">Optical packaging &amp; validation intern · May–August 2026</p>
-  <p>
-    I spent the summer at Ayar Labs, an optical I/O company, working on optical
-    packaging and validation: automated inspection workflows, hardware–software
-    integration, sub-micron optical alignment, and thermal validation.
-  </p>
-  <p>
-    Most of what I touched is internal, so there are no photos, measurement results,
-    or tool screenshots here. What I can say is that I worked on a fiber array unit
-    characterization station whose results feed directly into Ayar Labs' internal chip
-    iterations ahead of the public v1.0 release in a couple of years — and that I
-    learned an enormous amount about how a photonics product actually gets built,
-    measured, and trusted.
-  </p>
-</section>
+<main style="max-width:52rem;margin:0 auto;padding:0 28px">
 
-<section id="brailliance">
-  <h2>Brailliance</h2>
-  <p class="meta">MIT Beaver Works Summer Institute</p>
-  <p>
-    Brailliance is a custom chip project built at MIT Beaver Works: Verilog RTL taken
-    through Magic VLSI layout and taped out on the SkyWater 130&nbsp;nm process. It is the
-    project where I learned the full digital flow end to end rather than one stage of it.
-  </p>
-  <ul class="links">
-    <li><a href="https://www.brailliance.org/">brailliance.org</a></li>
-    <li><a href="https://docs.google.com/presentation/d/1uBL64VBNvHkjIxFDn34ppWjqpaKEQb1kB8uBDaxKCY8/edit?usp=sharing">Project presentation</a></li>
-  </ul>
-</section>
+  <section id="inverse-design" style="margin-top:44px;scroll-margin-top:96px">
+    <div style="display:flex;align-items:center;gap:7px;padding:11px 14px;background:#241a14;border:1px solid #3a2c22">
+      <span style="width:11px;height:11px;border-radius:50%;background:#e5675f"></span>
+      <span style="width:11px;height:11px;border-radius:50%;background:#e8b95c"></span>
+      <span style="width:11px;height:11px;border-radius:50%;background:#6fbf73"></span>
+      <span style="margin-left:8px;font-family:'JetBrains Mono',Menlo,monospace;font-size:13px;color:#b9a891">INVERSE_DESIGN.md</span>
+    </div>
+    <div style="padding:32px 32px 36px;background:#1e1611;border:1px solid #3a2c22;border-top:none">
+      <p>Photonic design usually works forward. You pick a geometry (a waveguide width, a grating pitch, a ring radius), simulate it, adjust it, and simulate again until the numbers are good enough. Inverse design runs the other direction. You specify the optical behavior you want and let an optimizer look for a geometry that produces it. Adjoint methods are what make that practical: one extra simulation tells you how every point in the design affects the output, so gradient descent can do the searching. The shapes that come out tend to be smaller and stranger than anything a person would draw, and they often beat hand-tuned designs on bandwidth, footprint, or loss.</p>
+      <p>AI is what lets this run at scale. A neural network trained as a surrogate for an electromagnetic solver replaces hours of FDTD with a single forward pass, which is the difference between checking hundreds of candidate geometries and checking millions. Automatic differentiation does the rest: it lets you differentiate through a physical simulation and get a gradient telling you which way to move the geometry.</p>
+      <p>This is the work I want to do. Device design cycles that take months of manual iteration should take hours.</p>
+    </div>
+  </section>
 
-<section id="cosmos">
-  <h2>COSMOS</h2>
-  <p class="meta">Fiber optic communication</p>
-  <p>
-    A summer research project on fiber optic communication — how light carries data over
-    fiber, and what limits how much of it you can send. This was my first real exposure to
-    photonics, and the reason the rest of the work on this page looks the way it does.
-  </p>
-  <ul class="links">
-    <li><a href="https://docs.google.com/presentation/d/10qnut7xnb3oYAdhEVoRHRYYdUR2HhELNzFrLnfCWKgw/edit?usp=sharing">Fiber optic communication (presentation)</a></li>
-  </ul>
-</section>
+  <section id="silitronics" style="margin-top:32px;scroll-margin-top:96px">
+    <div style="display:flex;align-items:center;gap:7px;padding:11px 14px;background:#241a14;border:1px solid #3a2c22">
+      <span style="width:11px;height:11px;border-radius:50%;background:#e5675f"></span>
+      <span style="width:11px;height:11px;border-radius:50%;background:#e8b95c"></span>
+      <span style="width:11px;height:11px;border-radius:50%;background:#6fbf73"></span>
+      <span style="margin-left:8px;font-family:'JetBrains Mono',Menlo,monospace;font-size:13px;color:#b9a891">SILITRONICS.exe</span>
+    </div>
+    <div style="padding:32px 32px 36px;background:#1e1611;border:1px solid #3a2c22;border-top:none">
+      <p style="color:#b9a891;font-size:15px">Silicon photonics packaging · presented at the IMAPS Device Packaging Conference, March 2025</p>
+      <p>Advanced photonic packaging work at Silitronics. I presented it as a poster at the IMAPS conference in 2025.</p>
+      <ul style="list-style:none;margin:0;padding-left:16px;border-left:2px solid #3a2c22">
+        <li><a href="https://docs.google.com/presentation/d/1Yg5OaU0lo_CMWeG-pFIN6DKNoNADtH4h/edit?usp=sharing&amp;ouid=110296341787920315158&amp;rtpof=true&amp;sd=true">Conference poster (March 2025)</a></li>
+      </ul>
+    </div>
+  </section>
 
-<section id="lumerical">
-  <h2>Lumerical</h2>
-  <p class="meta">Ansys Lumerical · waveguide and resonator simulation</p>
+  <section id="ayar" style="margin-top:32px;scroll-margin-top:96px">
+    <div style="display:flex;align-items:center;gap:7px;padding:11px 14px;background:#241a14;border:1px solid #3a2c22">
+      <span style="width:11px;height:11px;border-radius:50%;background:#e5675f"></span>
+      <span style="width:11px;height:11px;border-radius:50%;background:#e8b95c"></span>
+      <span style="width:11px;height:11px;border-radius:50%;background:#6fbf73"></span>
+      <span style="margin-left:8px;font-family:'JetBrains Mono',Menlo,monospace;font-size:13px;color:#b9a891">AYAR_LABS.exe</span>
+    </div>
+    <div style="padding:32px 32px 36px;background:#1e1611;border:1px solid #3a2c22;border-top:none">
+      <p style="color:#b9a891;font-size:15px">Optical packaging &amp; validation intern · May–August 2026</p>
+      <p>I spent the summer at Ayar Labs, an optical I/O company, on optical packaging and validation: automated inspection workflows, hardware–software integration, sub-micron optical alignment, thermal validation.</p>
+      <p>Most of it is internal, so there are no photos or measurement results here. What I can say: I worked on a fiber array unit characterization station, and its results feed the internal chip iterations leading up to the public v1.0 release. I also got a close look at how a photonics product actually gets built, measured, and trusted.</p>
+    </div>
+  </section>
 
-  <h3>Waveguides</h3>
-  <p>
-    A photonic waveguide guides light by surrounding a high-index core with lower-index
-    cladding — in silicon photonics, a silicon core (n&nbsp;≈&nbsp;3.48) sitting on buried
-    oxide (n&nbsp;≈&nbsp;1.44). Total internal reflection traps the light in the core, but
-    the cross-section decides how it travels. Above a certain width the guide supports
-    higher-order modes, which interfere with the fundamental mode and corrupt whatever
-    signal you are carrying. Below it, only the fundamental mode survives — that is the
-    single-mode regime almost every silicon photonic link is designed to stay in. Push the
-    width too far down and the mode spreads out of the core into the cladding, where it is
-    lost to scattering and substrate leakage. Single-mode design is choosing the window
-    between those two failures.
-  </p>
+  <section id="brailliance" style="margin-top:32px;scroll-margin-top:96px">
+    <div style="display:flex;align-items:center;gap:7px;padding:11px 14px;background:#241a14;border:1px solid #3a2c22">
+      <span style="width:11px;height:11px;border-radius:50%;background:#e5675f"></span>
+      <span style="width:11px;height:11px;border-radius:50%;background:#e8b95c"></span>
+      <span style="width:11px;height:11px;border-radius:50%;background:#6fbf73"></span>
+      <span style="margin-left:8px;font-family:'JetBrains Mono',Menlo,monospace;font-size:13px;color:#b9a891">BRAILLIANCE.exe</span>
+    </div>
+    <div style="padding:32px 32px 36px;background:#1e1611;border:1px solid #3a2c22;border-top:none">
+      <p style="color:#b9a891;font-size:15px">MIT Beaver Works Summer Institute</p>
+      <p>Brailliance is a custom chip built at MIT Beaver Works: Verilog RTL taken through Magic VLSI layout and taped out on SkyWater 130&nbsp;nm. It was the first time I ran the whole digital flow instead of one stage of it.</p>
+      <ul style="list-style:none;margin:0;padding-left:16px;border-left:2px solid #3a2c22">
+        <li><a href="https://www.brailliance.org/">brailliance.org</a></li>
+        <li><a href="https://docs.google.com/presentation/d/1uBL64VBNvHkjIxFDn34ppWjqpaKEQb1kB8uBDaxKCY8/edit?usp=sharing">Project presentation</a></li>
+      </ul>
+    </div>
+  </section>
 
-  <h4>Single-mode cutoff</h4>
-  <ul>
-    <li>Sweeping waveguide width to find where higher-order modes cut off</li>
-    <li>Comparing multimode and single-mode behavior in the same geometry</li>
-    <li>Simulating the higher-order modes directly rather than inferring them</li>
-  </ul>
+  <section id="cosmos" style="margin-top:32px;scroll-margin-top:96px">
+    <div style="display:flex;align-items:center;gap:7px;padding:11px 14px;background:#241a14;border:1px solid #3a2c22">
+      <span style="width:11px;height:11px;border-radius:50%;background:#e5675f"></span>
+      <span style="width:11px;height:11px;border-radius:50%;background:#e8b95c"></span>
+      <span style="width:11px;height:11px;border-radius:50%;background:#6fbf73"></span>
+      <span style="margin-left:8px;font-family:'JetBrains Mono',Menlo,monospace;font-size:13px;color:#b9a891">COSMOS.exe</span>
+    </div>
+    <div style="padding:32px 32px 36px;background:#1e1611;border:1px solid #3a2c22;border-top:none">
+      <p style="color:#b9a891;font-size:15px">Fiber optic communication</p>
+      <p>A summer research project on fiber optic communication: how light carries data over fiber, and what limits how much of it you can send. My first real exposure to photonics, and the reason everything else on this page happened.</p>
+      <ul style="list-style:none;margin:0;padding-left:16px;border-left:2px solid #3a2c22">
+        <li><a href="https://docs.google.com/presentation/d/10qnut7xnb3oYAdhEVoRHRYYdUR2HhELNzFrLnfCWKgw/edit?usp=sharing">Fiber optic communication (presentation)</a></li>
+      </ul>
+    </div>
+  </section>
 
-  <h4>Bend loss</h4>
-  <ul>
-    <li>Sweeping width and bend radius to map where a bend starts radiating</li>
-  </ul>
-  <p>
-    A bent waveguide loses light because the outer edge of the mode would have to outrun
-    the speed of light in the cladding to keep up with the inner edge; instead it radiates
-    away. Loss climbs sharply below a critical radius, and wider guides tolerate tighter
-    bends — but only up to the point where they stop being single-mode. Bend radius is
-    therefore not a layout detail; it is the constraint that sets how small a photonic
-    circuit can be.
-  </p>
+  <section id="lumerical" style="margin-top:32px;scroll-margin-top:96px">
+    <div style="display:flex;align-items:center;gap:7px;padding:11px 14px;background:#241a14;border:1px solid #3a2c22">
+      <span style="width:11px;height:11px;border-radius:50%;background:#e5675f"></span>
+      <span style="width:11px;height:11px;border-radius:50%;background:#e8b95c"></span>
+      <span style="width:11px;height:11px;border-radius:50%;background:#6fbf73"></span>
+      <span style="margin-left:8px;font-family:'JetBrains Mono',Menlo,monospace;font-size:13px;color:#b9a891">LUMERICAL.exe</span>
+    </div>
+    <div style="padding:32px 32px 36px;background:#1e1611;border:1px solid #3a2c22;border-top:none">
+      <p style="color:#b9a891;font-size:15px">Ansys Lumerical · waveguide and resonator simulation — ongoing</p>
 
-  <h3>Ring resonators</h3>
-  <p>
-    A ring resonator is a closed loop of waveguide placed close enough to a straight bus
-    waveguide for light to couple across the gap. Wavelengths whose round trip comes back
-    in phase build up inside the ring and disappear from the through port; everything else
-    passes by untouched. That makes a ring a wavelength-selective filter you can build out
-    of nothing but a bend. Its free spectral range is set by the round-trip length, its Q
-    by how little light is lost per lap, and its resonance shifts with temperature or an
-    applied voltage — which is what turns the same structure into a modulator, a
-    multiplexer, or a sensor depending on what you attach to it.
-  </p>
+      <h3 style="margin:26px 0 8px;font-size:18px;font-weight:600">Waveguides</h3>
+      <p>A waveguide guides light by putting a high-index core inside lower-index cladding. In silicon photonics that is a silicon core (n&nbsp;≈&nbsp;3.48) on buried oxide (n&nbsp;≈&nbsp;1.44). Total internal reflection keeps the light in the core, and the cross-section decides how it travels. Above a certain width the guide supports higher-order modes, which interfere with the fundamental mode and corrupt the signal. Below that width only the fundamental mode survives, which is the single-mode regime nearly every silicon photonic link stays in. Go too narrow and the mode spreads out into the cladding, where it scatters and leaks into the substrate. The useful window sits between those two failures, and mapping it is what I am doing now.</p>
 
-  <h3>Where this is going</h3>
-  <p>
-    The cutoff and bend-loss sweeps above are not separate exercises — they are the two
-    numbers a ring design starts from. The ring has to stay single-mode, and its radius
-    sets both its free spectral range and how much light it loses every lap, so the useful
-    design space is the overlap of those two studies. Having worked on the packaging and
-    validation side of optical I/O at Ayar Labs and Silitronics, I want to move upstream
-    into the device itself: integrated photonics research on ring resonators, building
-    toward resonant filters and modulators for optical links.
-  </p>
-</section>
+      <h4 style="margin:20px 0 6px;font-size:16px;font-weight:400;font-style:italic;color:#b9a891">Single-mode cutoff, in progress</h4>
+      <ul style="margin:0 0 1rem;padding-left:18px">
+        <li style="margin-bottom:4px">Sweeping waveguide width to find where higher-order modes cut off</li>
+        <li style="margin-bottom:4px">Comparing multimode and single-mode behavior in the same geometry</li>
+        <li style="margin-bottom:4px">Simulating the higher-order modes directly rather than inferring them</li>
+      </ul>
 
-<section id="first-build">
-  <h2>First build</h2>
-  <p class="meta">7th grade</p>
-  <p>
-    The first thing I ever designed and pitched. It is here because it is where the
-    habit started.
-  </p>
-  <ul class="links">
-    <li><a href="https://docs.google.com/presentation/d/1TAHW0f40430UeQ_MBsoi4NgGOtaFd2iQ/edit?slide=id.g8a79dbcd03_2_0#slide=id.g8a79dbcd03_2_0">Pitch deck</a></li>
-  </ul>
-</section>
+      <h4 style="margin:20px 0 6px;font-size:16px;font-weight:400;font-style:italic;color:#b9a891">Bend loss, in progress</h4>
+      <ul style="margin:0 0 1rem;padding-left:18px">
+        <li style="margin-bottom:4px">Sweeping width and bend radius to map where a bend starts radiating</li>
+      </ul>
+      <p>A bend radiates because the outer edge of the mode would have to outrun the speed of light in the cladding to keep up with the inner edge. Loss climbs sharply below a critical radius. Wider guides tolerate tighter bends, but only until they stop being single-mode. These sweeps are still running. Bend radius is what sets how small a photonic circuit can get, so I would rather measure it than guess.</p>
 
-<section id="skills">
-  <h2>Skills</h2>
-  <dl class="skills">
-    <dt>Digital design</dt>
-    <dd>Verilog, RTL design, Magic VLSI, SkyWater 130&nbsp;nm, Cadence Virtuoso</dd>
-    <dt>Photonics</dt>
-    <dd>Ansys Lumerical, optical alignment, fiber array unit characterization, thermal validation</dd>
-    <dt>Software</dt>
-    <dd>Python, C#</dd>
-  </dl>
-</section>
+      <h3 style="margin:26px 0 8px;font-size:18px;font-weight:600">Ring resonators, next</h3>
+      <p>A ring resonator is a closed loop of waveguide placed close enough to a straight bus waveguide that light couples across the gap. Wavelengths whose round trip comes back in phase build up inside the ring and drop out of the through port. Everything else passes. Round-trip length sets the free spectral range, loss per lap sets the Q, and the resonance moves with temperature or an applied voltage, which is how the same structure becomes a filter, a modulator, or a sensor depending on what you attach to it. I haven't simulated any rings yet. This is where the waveguide work is headed.</p>
+
+      <h3 style="margin:26px 0 8px;font-size:18px;font-weight:600">Where this is going</h3>
+      <p>The cutoff and bend-loss sweeps are the two numbers a ring design starts from. The ring has to stay single-mode, and its radius fixes both the free spectral range and the loss per lap, so the design space is the overlap of those two studies. I've worked the packaging and validation side of optical I/O at Ayar Labs and Silitronics. I want to move upstream to the device itself, toward resonant filters and modulators for optical links.</p>
+    </div>
+  </section>
+
+  <section id="first-build" style="margin-top:32px;scroll-margin-top:96px">
+    <div style="display:flex;align-items:center;gap:7px;padding:11px 14px;background:#241a14;border:1px solid #3a2c22">
+      <span style="width:11px;height:11px;border-radius:50%;background:#e5675f"></span>
+      <span style="width:11px;height:11px;border-radius:50%;background:#e8b95c"></span>
+      <span style="width:11px;height:11px;border-radius:50%;background:#6fbf73"></span>
+      <span style="margin-left:8px;font-family:'JetBrains Mono',Menlo,monospace;font-size:13px;color:#b9a891">FIRST_BUILD.exe</span>
+    </div>
+    <div style="padding:32px 32px 36px;background:#1e1611;border:1px solid #3a2c22;border-top:none">
+      <p style="color:#b9a891;font-size:15px">7th grade</p>
+      <p>The first thing I ever designed and pitched. It is here because it is where the habit started.</p>
+      <ul style="list-style:none;margin:0;padding-left:16px;border-left:2px solid #3a2c22">
+        <li><a href="https://docs.google.com/presentation/d/1TAHW0f40430UeQ_MBsoi4NgGOtaFd2iQ/edit?slide=id.g8a79dbcd03_2_0#slide=id.g8a79dbcd03_2_0">Pitch deck</a></li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="skills" style="margin-top:32px;scroll-margin-top:96px">
+    <div style="display:flex;align-items:center;gap:7px;padding:11px 14px;background:#241a14;border:1px solid #3a2c22">
+      <span style="width:11px;height:11px;border-radius:50%;background:#e5675f"></span>
+      <span style="width:11px;height:11px;border-radius:50%;background:#e8b95c"></span>
+      <span style="width:11px;height:11px;border-radius:50%;background:#6fbf73"></span>
+      <span style="margin-left:8px;font-family:'JetBrains Mono',Menlo,monospace;font-size:13px;color:#b9a891">SKILLS.txt</span>
+    </div>
+    <div style="padding:32px;background:#1e1611;border:1px solid #3a2c22;border-top:none;display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,220px),1fr));gap:22px">
+      <div>
+        <div style="font-style:italic;color:#b9a891;margin-bottom:6px">Digital design</div>
+        <div>Verilog, RTL design, Magic VLSI, SkyWater 130&nbsp;nm, Cadence Virtuoso</div>
+      </div>
+      <div>
+        <div style="font-style:italic;color:#b9a891;margin-bottom:6px">Photonics</div>
+        <div>Ansys Lumerical, optical alignment, fiber array unit characterization, thermal validation</div>
+      </div>
+      <div>
+        <div style="font-style:italic;color:#b9a891;margin-bottom:6px">Software</div>
+        <div>Python, C#</div>
+      </div>
+    </div>
+  </section>
+
+  <footer style="margin:52px 0 0;padding:26px 0 64px;border-top:1px solid #3a2c22;display:flex;flex-wrap:wrap;justify-content:space-between;gap:14px 28px;color:#b9a891;font-size:15px">
+    <p style="margin:0">Akshat Bora · Ann Arbor, Michigan</p>
+    <p style="margin:0;display:flex;flex-wrap:wrap;gap:20px">
+      <a href="mailto:YOUR-EMAIL@umich.edu">Email</a>
+      <a href="https://www.linkedin.com/in/YOUR-HANDLE">LinkedIn</a>
+      <a href="https://github.com/YOUR-HANDLE">GitHub</a>
+    </p>
+  </footer>
 
 </main>
-
-<footer>
-  <p>Akshat Bora · Ann Arbor, Michigan</p>
-  <p class="contact">
-    <a href="mailto:YOUR-EMAIL@umich.edu">Email</a>
-    <a href="https://www.linkedin.com/in/YOUR-HANDLE">LinkedIn</a>
-    <a href="https://github.com/YOUR-HANDLE">GitHub</a>
-  </p>
-</footer>
-
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;accent&quot;:{&quot;editor&quot;:&quot;color&quot;,&quot;default&quot;:&quot;#e2905c&quot;,&quot;tsType&quot;:&quot;string&quot;,&quot;options&quot;:[&quot;#e2905c&quot;,&quot;#e8b95c&quot;,&quot;#7fb7c9&quot;,&quot;#d97757&quot;]},&quot;photoTreatment&quot;:{&quot;editor&quot;:&quot;enum&quot;,&quot;default&quot;:&quot;warm&quot;,&quot;tsType&quot;:&quot;string&quot;,&quot;options&quot;:[&quot;warm&quot;,&quot;sepia&quot;,&quot;bw&quot;]}}">
+class Component extends DCLogic {
+  renderVals() {
+    const filters = {
+      warm: "saturate(.9) contrast(1.05)",
+      sepia: "grayscale(1) sepia(.45) contrast(1.05)",
+      bw: "grayscale(1) contrast(1.08)"
+    };
+    return {
+      accent: this.props.accent ?? "#e2905c",
+      photoFilter: filters[this.props.photoTreatment ?? "warm"] || filters.warm
+    };
+  }
+}
+</script>
 </body>
 </html>
